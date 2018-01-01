@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual C++ Express 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "orc_server", "orc_server\orc_server.vcxproj", "{6B0F8995-D4AA-4672-B0A3-7FF73560216C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B0F8995-D4AA-4672-B0A3-7FF73560216C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B0F8995-D4AA-4672-B0A3-7FF73560216C}.Debug|Win32.Build.0 = Debug|Win32
+		{6B0F8995-D4AA-4672-B0A3-7FF73560216C}.Release|Win32.ActiveCfg = Release|Win32
+		{6B0F8995-D4AA-4672-B0A3-7FF73560216C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

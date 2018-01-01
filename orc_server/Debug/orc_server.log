@@ -1,0 +1,3 @@
+﻿  orc_server.cpp
+g:\visual studio 2010\projects\orc_server\orc_server\orc_server.cpp(52): warning C4172: ローカル変数またはテンポラリのアドレスを返します。
+  orc_server.vcxproj -> G:\Visual Studio 2010\Projects\orc_server\Debug\orc_server.exe
