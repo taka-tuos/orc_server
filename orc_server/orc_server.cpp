@@ -43,10 +43,8 @@ char* w32_printf(const char* format, ...)
 	char sz[1024];
 
 	va_start(ap, format);
-	vsprintf(sz, format, ap);
-	HANDLE Cons = GetStdHandle(STD_OUTPUT_HANDLE);
-	DWORD NumberOfCharsWritten;
-	WriteConsole(Cons, sz, strlen(sz), &NumberOfCharsWritten, NULL);
+	vfprintf(stdout, format, ap);
+	fflush(stdout);
 	va_end(ap);
 
 	return sz;
@@ -96,17 +94,16 @@ struct SERVER_SETTING read_settings()
 	return ret;
 }
 
-int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
+//int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
+int main(int argc, char *argv[])
 {
 	DPlay = new GDPlay;
-	DPlay->Init(hInstance);
+	DPlay->Init(GetModuleHandle(NULL));
 
 	DPlay->SetReceiveFunc(MyReceiveFunc);
 	DPlay->SetDestroyFunc(MyDestroyFunc);
 	DPlay->SetCreateFunc(MyCreateFunc);
 	DPlay->SetTerminateFunc(MyTerminateFunc);
-
-	AllocConsole();
 
 	struct SERVER_SETTING s = read_settings();
 
@@ -121,8 +118,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int)
 	while (1) {
 		Sleep(20);
 	}
-
-	FreeConsole();
 
 	DPlay->End();
 

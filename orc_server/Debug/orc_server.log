@@ -1,3 +1,20 @@
-﻿  orc_server.cpp
-g:\visual studio 2010\projects\orc_server\orc_server\orc_server.cpp(52): warning C4172: ローカル変数またはテンポラリのアドレスを返します。
-  orc_server.vcxproj -> G:\Visual Studio 2010\Projects\orc_server\Debug\orc_server.exe
+﻿2018/12/21 午後 08:22:38 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\Source Code\Visual Studio 2010\Projects\orc_server\orc_server\orc_server.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _USING_V110_SDK71_ /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt funcs.cpp orc_server.cpp
+         orc_server.cpp
+     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\orc_server.cpp(50): warning C4172: ローカル変数またはテンポラリのアドレスを返します。
+         funcs.cpp
+         コードを生成中...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Debug\orc_server.exe" /INCREMENTAL /NOLOGO /LIBPATH:./lib/ dxguid.lib dplayx.lib winmm.lib liblua.lib liblualib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Debug\orc_server.pdb" /SUBSYSTEM:CONSOLE,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Debug\orc_server.lib" /MACHINE:X86 Debug\funcs.obj
+         Debug\glue.obj
+         Debug\orc_server.obj
+         LINK : 前回のインクリメンタル リンクで D:\Source Code\Visual Studio 2010\Projects\orc_server\Debug\orc_server.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+         orc_server.vcxproj -> D:\Source Code\Visual Studio 2010\Projects\orc_server\Debug\orc_server.exe
+     1>プロジェクト "D:\Source Code\Visual Studio 2010\Projects\orc_server\orc_server\orc_server.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:11.03

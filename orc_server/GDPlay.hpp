@@ -8,6 +8,9 @@
 #include <dplobby.h>
 #include <DXErr8.h>
 #include <locale.h>
+#include <stdio.h>
+
+#define MessageBox(a,b,c,d) puts(b)
 
 //メモリリーク検出用
 #include <crtdbg.h>  

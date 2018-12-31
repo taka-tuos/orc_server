@@ -71,7 +71,8 @@ HRESULT MyReceiveFunc(MYAPP_PLAYER_INFO* playerInfo, DWORD size, BYTE *stream) {
 		HANDLE Cons = GetStdHandle(STD_OUTPUT_HANDLE);
 		DWORD NumberOfCharsWritten;
 		LastChatInfo = ChatDataDisp(playerInfo->strPlayerName, (char *)data);
-		WriteConsole(Cons, LastChatInfo.fin, strlen(LastChatInfo.fin), &NumberOfCharsWritten, NULL);
+		//WriteConsole(Cons, LastChatInfo.fin, strlen(LastChatInfo.fin), &NumberOfCharsWritten, NULL);
+		printf(LastChatInfo.fin);
 		strcpy(LastChatData, LastChatInfo.fin);
 		luaSystemCall();
 	}
@@ -182,6 +183,14 @@ HRESULT MyReceiveFunc(MYAPP_PLAYER_INFO* playerInfo, DWORD size, BYTE *stream) {
 		strm2.code = 1;
 		char *str = (char*)strm2.data;
 		sprintf(str, "Chips=?");
+		DWORD size = strlen(str) + 1 + sizeof(short);
+		DPlay->SendTo(playerInfo->dpnidPlayer, (BYTE*)&strm2, size, 180, DPNSEND_NOLOOPBACK | DPNSEND_NOCOMPLETE);
+	}
+	else if (code == 60) { //Player num
+		GSTREAM strm2;
+		strm2.code = 1;
+		char *str = (char*)strm2.data;
+		sprintf(str, "Players=%d ", DPlay->GetNumPlayers());
 		DWORD size = strlen(str) + 1 + sizeof(short);
 		DPlay->SendTo(playerInfo->dpnidPlayer, (BYTE*)&strm2, size, 180, DPNSEND_NOLOOPBACK | DPNSEND_NOCOMPLETE);
 	}

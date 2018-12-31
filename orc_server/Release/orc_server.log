@@ -1,4 +1,27 @@
-﻿  funcs.cpp
-  コード生成しています。
-  コード生成が終了しました。
-  orc_server.vcxproj -> G:\Visual Studio 2010\Projects\orc_server\Release\orc_server.exe
+﻿2018/12/21 午後 08:27:48 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\Source Code\Visual Studio 2010\Projects\orc_server\orc_server\orc_server.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include/ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _USING_V110_SDK71_ /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt funcs.cpp glue.cpp orc_server.cpp
+         funcs.cpp
+     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
+     1>funcs.cpp(72): warning C4101: 'NumberOfCharsWritten' : ローカル変数は 1 度も使われていません。
+         glue.cpp
+     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
+         orc_server.cpp
+     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
+                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
+     1>orc_server.cpp(50): warning C4172: ローカル変数またはテンポラリのアドレスを返します。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Release\orc_server.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:./lib/ dxguid.lib dplayx.lib winmm.lib liblua.lib liblualib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Release\orc_server.pdb" /SUBSYSTEM:CONSOLE,"5.01" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Source Code\Visual Studio 2010\Projects\orc_server\Release\orc_server.lib" /MACHINE:X86 /SAFESEH Release\funcs.obj
+         Release\glue.obj
+         Release\orc_server.obj
+         コード生成しています。
+         コード生成が終了しました。
+         orc_server.vcxproj -> D:\Source Code\Visual Studio 2010\Projects\orc_server\Release\orc_server.exe
+     1>プロジェクト "D:\Source Code\Visual Studio 2010\Projects\orc_server\orc_server\orc_server.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:02.49
