@@ -1,14 +1,7 @@
-﻿2018/12/21 午後 08:27:48 にビルドを開始しました。
+﻿2018/12/31 午後 09:12:07 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "D:\Source Code\Visual Studio 2010\Projects\orc_server\orc_server\orc_server.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include/ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _USING_V110_SDK71_ /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt funcs.cpp glue.cpp orc_server.cpp
-         funcs.cpp
-     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
-                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
-     1>funcs.cpp(72): warning C4101: 'NumberOfCharsWritten' : ローカル変数は 1 度も使われていません。
-         glue.cpp
-     1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
-                 C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./include/ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _USING_V110_SDK71_ /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt orc_server.cpp
          orc_server.cpp
      1>d:\source code\visual studio 2010\projects\orc_server\orc_server\GDPlay.hpp(13): warning C4005: 'MessageBox' : マクロが再定義されました。
                  C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\winuser.h(7528) : 'MessageBox' の前の定義を確認してください
@@ -24,4 +17,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:02.49
+経過時間 00:00:01.18

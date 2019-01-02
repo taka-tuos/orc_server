@@ -65,7 +65,7 @@ struct SERVER_SETTING read_settings()
 		if (strcmp(__argv[i], "-sv") == 0) {
 			if (ipp_argc(&i)) {
 				w32_printf("error : オプション [-sv] の後にポートが指定されていません\n");
-				puts("デフォルト設定を使用します(2345)\n");
+				w32_printf("デフォルト設定を使用します(2345)\n");
 			}
 			else if (isdigit_string(__argv[i])) {
 				w32_printf("error : オプション [-sv] で指定されたポート(%s)が有効ではありません\n", __argv[i]);

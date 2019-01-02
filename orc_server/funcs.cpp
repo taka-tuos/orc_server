@@ -19,6 +19,8 @@ GMYDATA MyPlayerData;
 GPLAYERDATA PlayerData[GPLAYERMAX];
 GPLAYERDATA PrePlayerData[GPLAYERMAX];
 
+extern char* w32_printf(const char* format, ...);
+
 GCHATDATA ChatDataDisp(char *name, char *s)
 {
 	GCHATDATA ret;
@@ -68,11 +70,11 @@ HRESULT MyReceiveFunc(MYAPP_PLAYER_INFO* playerInfo, DWORD size, BYTE *stream) {
 	short code = *((short*)strm);
 	
 	if (code == 1) { //チャットデータ
-		HANDLE Cons = GetStdHandle(STD_OUTPUT_HANDLE);
-		DWORD NumberOfCharsWritten;
+		//HANDLE Cons = GetStdHandle(STD_OUTPUT_HANDLE);
+		//DWORD NumberOfCharsWritten;
 		LastChatInfo = ChatDataDisp(playerInfo->strPlayerName, (char *)data);
 		//WriteConsole(Cons, LastChatInfo.fin, strlen(LastChatInfo.fin), &NumberOfCharsWritten, NULL);
-		printf(LastChatInfo.fin);
+		w32_printf(LastChatInfo.fin);
 		strcpy(LastChatData, LastChatInfo.fin);
 		luaSystemCall();
 	}
